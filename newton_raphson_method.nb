@@ -1,0 +1,318 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11292,        310]
+NotebookOptionsPosition[     10300,        283]
+NotebookOutlinePosition[     10643,        298]
+CellTagsIndexPosition[     10600,        295]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", 
+   RowBox[{"x0", ",", "n"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "x_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "-", "2"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"g", "[", "x_", "]"}], "=", 
+   RowBox[{"D", "[", 
+    RowBox[{
+     RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}]}], ";", " ", 
+  RowBox[{"(*", 
+   RowBox[{":=", " ", 
+    RowBox[{
+    "bray", " ", "tarif", " ", "moshtagh", " ", "inja", " ", "moshkel", " ", 
+     "ijad", " ", "mikone"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"x0", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"n", "=", "7"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"N", "[", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"x0", "=", 
+       RowBox[{"x0", "-", 
+        FractionBox[
+         RowBox[{"f", "[", "x0", "]"}], 
+         RowBox[{"g", "[", "x0", "]"}]]}]}], ";", 
+      RowBox[{"(*", 
+       RowBox[{
+       "dar", " ", "in", " ", "barname", " ", "mitavan", " ", "be", " ", 
+        "jay", " ", "tarif", " ", "kardan", " ", "moshtagh", " ", "az", " ", 
+        RowBox[{"f", "'"}], " ", "estefade", " ", "kard"}], "*)"}], 
+      "\[IndentingNewLine]", "x0"}], ",", " ", 
+     RowBox[{"(", "n", ")"}]}], "]"}], "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.9737420894709845`*^9, 3.9737422742140317`*^9}, {
+  3.9737426001312437`*^9, 3.9737426417907243`*^9}, {3.9737426782727876`*^9, 
+  3.973742704244871*^9}, {3.9737427343878374`*^9, 3.9737427816068044`*^9}, {
+  3.973742816833412*^9, 3.9737429456370745`*^9}, {3.9737430409937267`*^9, 
+  3.9737431503630486`*^9}, {3.9737441645832725`*^9, 
+  3.9737441662182026`*^9}},ExpressionUUID->"ef81514a-cf98-41fb-92e1-\
+434fa9769e4d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1.5`", ",", "1.4166666666666667`", ",", "1.4142156862745099`", ",", 
+   "1.4142135623746899`", ",", "1.4142135623730951`", ",", 
+   "1.414213562373095`", ",", "1.4142135623730951`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.9737429065425262`*^9, 3.9737429314861555`*^9}, 
+   3.9737430606726665`*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"b934540b-842b-4e80-90b3-7ba4518989c0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", 
+   RowBox[{"x0", ",", "n", ",", "fstr"}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"d", "=", "9"}], ";", " ", 
+  RowBox[{"(*", 
+   RowBox[{"tedad", " ", "argham", " ", "ashar"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"fstr", "=", 
+   RowBox[{"InputString", "[", "\"\<enter function:\>\"", "]"}]}], ";", " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "InputString", " ", "va", " ", "ToExpression", " ", "dastooratesh", " ", 
+    "ba", " ", "ham", " ", "miad"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"f", "[", "x_", "]"}], "=", 
+   RowBox[{"ToExpression", "[", "fstr", "]"}]}], ";", " ", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "inja", " ", "ham", " ", "baray", " ", "ToExpression", " ", "nabayad", 
+     " ", "ba"}], " ", ":=", " ", 
+    RowBox[{"tarif", " ", "kpnim"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"g", "[", "x_", "]"}], "=", 
+   RowBox[{"D", "[", 
+    RowBox[{
+     RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}]}], ";", " ", 
+  RowBox[{"(*", 
+   RowBox[{"inam", " ", ":=", " ", "nemikhad"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"fstr1", "=", 
+   RowBox[{"InputString", "[", "\"\<enter Initial value:\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"x0", "=", 
+   RowBox[{"ToExpression", "[", "fstr1", "]"}]}], ";", " ", 
+  RowBox[{"(*", 
+   RowBox[{"noghte", " ", "shoroo"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"fstr2", "=", 
+   RowBox[{"InputString", "[", "\"\<enter Iteration:\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"n", "=", 
+   RowBox[{"ToExpression", "[", "fstr2", "]"}]}], ";", " ", 
+  RowBox[{"(*", 
+   RowBox[{"tedad", " ", "tekrar"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"N", "[", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"x0", "=", 
+        RowBox[{"x0", "-", 
+         FractionBox[
+          RowBox[{"f", "[", "x0", "]"}], 
+          RowBox[{"g", "[", "x0", "]"}]]}]}], ";", "\[IndentingNewLine]", 
+       "x0"}], ",", 
+      RowBox[{"(", "n", ")"}]}], "]"}], ",", "d"}], "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.9737434286252584`*^9, 3.973743666414712*^9}, {
+   3.9737438893648095`*^9, 3.973744018996498*^9}, {3.9737440714345064`*^9, 
+   3.97374415464427*^9}, {3.97374673664355*^9, 3.973746865283816*^9}, {
+   3.973747311824585*^9, 3.9737473269153037`*^9}, {3.973747408841751*^9, 
+   3.973747468180686*^9}, {3.973747528275096*^9, 3.9737475448681507`*^9}, 
+   3.9737475803105783`*^9, {3.9737476790208387`*^9, 3.973747700807479*^9}, 
+   3.9737479038706207`*^9},ExpressionUUID->"ec833f35-4626-46db-a601-\
+ca9e39129adb"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1.5`9.", ",", "1.4166666666666666667`9.", ",", "1.4142156862745098039`9.", 
+   ",", "1.4142135623746899106`9.", ",", "1.4142135623730950488`9."}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.973747637379711*^9},
+ CellLabel->"Out[31]=",ExpressionUUID->"d14a53f8-dc79-4aea-a522-70ae9627d603"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", 
+   RowBox[{"x0", ",", "n", ",", "fstr", ",", "e"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"d", "=", "9"}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"tedad", " ", "argham", " ", "ashar"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fstr", "=", 
+   RowBox[{"InputString", "[", "\"\<enter function:\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "x_", "]"}], "=", 
+   RowBox[{"ToExpression", "[", "fstr", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"g", "[", "x_", "]"}], "=", 
+   RowBox[{"D", "[", 
+    RowBox[{
+     RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fstr1", "=", 
+   RowBox[{"InputString", "[", "\"\<enter Initial value:\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"x0", "=", 
+   RowBox[{"ToExpression", "[", "fstr1", "]"}]}], ";", " ", 
+  RowBox[{"(*", 
+   RowBox[{"noghte", " ", "shoroo"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"fstr2", "=", 
+   RowBox[{"InputString", "[", "\"\<enter Error:\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"e", "=", 
+    RowBox[{"ToExpression", "[", "fstr2", "]"}]}], ";"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{"ebsilon", " ", "ya", " ", "khata"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"iter", "=", "0"}], ";", " ", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"shomarande", ".", " ", "ino"}], " ", "gozashtim", " ", "ta", " ",
+     "bedonim", " ", "chand", " ", "bar", " ", "tekrar", " ", "mishe", " ", 
+    "ta", " ", "be", " ", "khataee", " ", "ke", " ", "dadim", " ", "mirese"}],
+    "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"While", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Abs", "[", 
+      RowBox[{"f", "[", "x0", "]"}], "]"}], ">", "e"}], ",", 
+    RowBox[{
+     RowBox[{"x0", "=", 
+      RowBox[{"x0", "-", 
+       FractionBox[
+        RowBox[{"f", "[", "x0", "]"}], 
+        RowBox[{"g", "[", "x0", "]"}]]}]}], ";", 
+     RowBox[{"(*", 
+      RowBox[{
+      "ta", " ", "zamani", " ", "ke", " ", "ghadr", " ", "motlagh", " ", 
+       RowBox[{"f", "[", "x0", "]"}], " ", "az", " ", "ebsilon", " ", 
+       "bozorg", " ", "tar", " ", "ast", " ", "x0", " ", "ra", " ", "toolid", 
+       " ", 
+       RowBox[{"kon", ".", " ", "avan"}], " ", "bary", " ", "ke", " ", 
+       "ghadr", " ", "motlagh", " ", "kochaktar", " ", "shod", " ", "miad", 
+       " ", "biron"}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"iter", "++"}], ";"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<javab:\>\"", ",", 
+    RowBox[{"N", "[", "x0", "]"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<tedad tekrar:\>\"", ",", "iter"}], "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.973747710431072*^9, 3.9737477761903567`*^9}, {
+   3.9737478150115786`*^9, 3.973748004786483*^9}, {3.97374805457731*^9, 
+   3.9737481228882246`*^9}, {3.9737481899750576`*^9, 3.973748231908978*^9}, {
+   3.9737482771740913`*^9, 3.973748285531622*^9}, {3.9737485170968914`*^9, 
+   3.973748533905098*^9}, {3.9737485650275555`*^9, 3.9737485884226723`*^9}, {
+   3.973748645319811*^9, 3.9737486511552825`*^9}, 3.973748708188306*^9, {
+   3.973748803919674*^9, 3.9737488847398605`*^9}, {3.973748934222206*^9, 
+   3.973748982164324*^9}, {3.973749012281251*^9, 3.9737490206442146`*^9}, {
+   3.9737491011014366`*^9, 
+   3.973749160868676*^9}},ExpressionUUID->"5fd05cf0-2247-4ef9-9066-\
+b238293e439a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"javab:\"\>", "\[InvisibleSpace]", "1.4142156862745099`"}],
+  SequenceForm["javab:", 1.4142156862745099`],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.973748604610918*^9, 3.973748636552287*^9, 
+  3.9737486774076104`*^9},
+ CellLabel->
+  "During evaluation of \
+In[61]:=",ExpressionUUID->"ae734f93-d02d-4ab3-9f82-851e23bfe924"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"tedad tekrar:\"\>", "\[InvisibleSpace]", "3"}],
+  SequenceForm["tedad tekrar:", 3],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.973748604610918*^9, 3.973748636552287*^9, 
+  3.9737486774235706`*^9},
+ CellLabel->
+  "During evaluation of \
+In[61]:=",ExpressionUUID->"1ed3ba35-cd3f-4c87-b76a-bf690354a9b7"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1536, 773},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1810, 46, 175, "Input",ExpressionUUID->"ef81514a-cf98-41fb-92e1-434fa9769e4d"],
+Cell[2393, 70, 421, 8, 32, "Output",ExpressionUUID->"b934540b-842b-4e80-90b3-7ba4518989c0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2851, 83, 2673, 67, 251, "Input",ExpressionUUID->"ec833f35-4626-46db-a601-ca9e39129adb"],
+Cell[5527, 152, 331, 7, 32, "Output",ExpressionUUID->"d14a53f8-dc79-4aea-a522-70ae9627d603"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5895, 164, 3611, 91, 328, "Input",ExpressionUUID->"5fd05cf0-2247-4ef9-9066-b238293e439a"],
+Cell[CellGroupData[{
+Cell[9531, 259, 380, 9, 22, "Print",ExpressionUUID->"ae734f93-d02d-4ab3-9f82-851e23bfe924"],
+Cell[9914, 270, 358, 9, 22, "Print",ExpressionUUID->"1ed3ba35-cd3f-4c87-b76a-bf690354a9b7"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
